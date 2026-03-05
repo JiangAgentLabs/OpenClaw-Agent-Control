@@ -53,5 +53,4 @@ npm run prod:start
 - About 说明：[docs/ABOUT.md](./docs/ABOUT.md)
 - 教程（中文）：[docs/TUTORIAL.zh-CN.md](./docs/TUTORIAL.zh-CN.md)
 - API 文档：[docs/API.md](./docs/API.md)
-- 开源项目对标：[docs/OPEN_SOURCE_LANDSCAPE.md](./docs/OPEN_SOURCE_LANDSCAPE.md)
 - 贡献指南：[CONTRIBUTING.md](./CONTRIBUTING.md)

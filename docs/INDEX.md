@@ -11,7 +11,6 @@
 ## References
 - About: [./ABOUT.md](./ABOUT.md)
 - API Reference: [./API.md](./API.md)
-- Open-source Landscape: [./OPEN_SOURCE_LANDSCAPE.md](./OPEN_SOURCE_LANDSCAPE.md)
 
 ## Project Meta
 - Changelog: [../CHANGELOG.md](../CHANGELOG.md)

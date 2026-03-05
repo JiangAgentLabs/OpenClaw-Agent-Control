@@ -53,5 +53,4 @@ npm run prod:start
 - About: [docs/ABOUT.md](./docs/ABOUT.md)
 - Tutorial (EN): [docs/TUTORIAL.en.md](./docs/TUTORIAL.en.md)
 - API Reference: [docs/API.md](./docs/API.md)
-- Open-source Landscape: [docs/OPEN_SOURCE_LANDSCAPE.md](./docs/OPEN_SOURCE_LANDSCAPE.md)
 - Contributing: [CONTRIBUTING.md](./CONTRIBUTING.md)

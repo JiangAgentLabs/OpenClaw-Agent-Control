@@ -76,7 +76,6 @@ OPENCLAW_MONITOR_SKILL_DIR=/root/.openclaw/skills/openclaw-monitor \
 - Chinese Tutorial: [docs/TUTORIAL.zh-CN.md](./docs/TUTORIAL.zh-CN.md)
 - English Tutorial: [docs/TUTORIAL.en.md](./docs/TUTORIAL.en.md)
 - API Reference: [docs/API.md](./docs/API.md)
-- Open Source Landscape: [docs/OPEN_SOURCE_LANDSCAPE.md](./docs/OPEN_SOURCE_LANDSCAPE.md)
 - Changelog: [CHANGELOG.md](./CHANGELOG.md)
 - Contributing: [CONTRIBUTING.md](./CONTRIBUTING.md)
 - License: [LICENSE](./LICENSE)
