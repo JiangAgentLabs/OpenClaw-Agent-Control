@@ -15,7 +15,7 @@ from fastapi import FastAPI
 from fastapi.responses import HTMLResponse
 from fastapi.responses import StreamingResponse
 
-app = FastAPI(title="OpenClaw Monitor MVP")
+app = FastAPI(title="OpenClaw Agent Control")
 
 OPENCLAW_HOME = Path(os.getenv("OPENCLAW_HOME", "/root/.openclaw"))
 CACHE_TTL_SECONDS = int(os.getenv("CACHE_TTL_SECONDS", "15"))
@@ -802,7 +802,7 @@ def get_status_cached(force: bool = False) -> dict[str, Any]:
 @app.get("/")
 def index() -> dict[str, str]:
     return {
-        "message": "OpenClaw Monitor MVP",
+        "message": "OpenClaw Agent Control",
         "dashboard": "/dashboard",
         "status_api": "/api/status",
     }
@@ -887,7 +887,7 @@ def dashboard(lang: str = "zh") -> str:
 
     i18n = {
         "zh": {
-            "title": "OpenClaw 监控面板",
+            "title": "OpenClaw Agent 状态监控与控制台",
             "language": "语言",
             "meta_source": "数据源",
             "meta_generated": "生成时间",
@@ -955,7 +955,7 @@ def dashboard(lang: str = "zh") -> str:
             "no_subagents": "暂无子 agent 执行记录",
         },
         "en": {
-            "title": "OpenClaw Monitor Dashboard",
+            "title": "OpenClaw Agent Control Dashboard",
             "language": "Language",
             "meta_source": "source",
             "meta_generated": "generated_at",

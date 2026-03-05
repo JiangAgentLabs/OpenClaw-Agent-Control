@@ -71,8 +71,8 @@ export function DashboardShell({ data }: { data: MonitorStatus }) {
   const t = useMemo(() => {
     if (lang === "zh") {
       return {
-        subtitle: "OpenClaw Agent 运行中枢",
-        title: "Agent 监控台",
+        subtitle: "OpenClaw Agent Control",
+        title: "Agent 状态监控与控制台",
         generatedAt: "生成时间",
         stalledAgents: "卡住 Agent",
         importantModules: "重要模块",
@@ -155,8 +155,8 @@ export function DashboardShell({ data }: { data: MonitorStatus }) {
     }
 
     return {
-      subtitle: "OpenClaw Agent Ops Center",
-      title: "Agent Monitor Console",
+      subtitle: "OpenClaw Agent Control",
+      title: "Agent Status & Control Console",
       generatedAt: "generated_at",
       stalledAgents: "stalled_agents",
       importantModules: "Important Modules",

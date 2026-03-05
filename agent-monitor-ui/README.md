@@ -1,6 +1,6 @@
-## Agent Monitor UI
+## OpenClaw Agent Control UI
 
-OpenClaw Monitor 的前端 UI（Next.js 16）。
+OpenClaw Agent Control 的前端 UI（Next.js 16）。
 
 ## Getting Started
 

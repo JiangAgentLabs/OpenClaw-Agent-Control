@@ -40,7 +40,7 @@ export default async function Home() {
   return (
     <main className="flex min-h-screen items-center justify-center bg-zinc-50 p-8">
       <div className="w-full max-w-xl rounded-xl border bg-white p-6 shadow-sm">
-        <h1 className="text-xl font-semibold">Agent Monitor UI</h1>
+        <h1 className="text-xl font-semibold">OpenClaw Agent Control</h1>
         <p className="mt-2 text-sm text-zinc-600">Failed to load monitor data from backend.</p>
         <pre className="mt-4 overflow-auto rounded-md bg-zinc-100 p-3 text-xs text-zinc-700">
           {errorMessage ?? "unknown error"}
