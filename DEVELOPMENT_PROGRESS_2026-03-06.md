@@ -1,44 +1,52 @@
-# OpenClaw Monitor MVP - Development Progress (2026-03-06)
+# Development Progress - 2026-03-06
 
-## 1) Frontend information architecture & clarity
+Project: OpenClaw Agent Control
 
-- Reordered dashboard to prioritize the **Core Display Area** above the **Important Modules** section.
-- Redesigned Important Modules as a responsive multi-column row (`1/2/4` columns by viewport).
-- Added compact cards for:
-  - risk summary,
-  - priority queue,
-  - active queue,
-  - status semantics + key counts.
-- Kept heavy visual modules (graph/charts) on-demand to reduce runtime overhead.
+## Summary
+- Completed dashboard information architecture optimization.
+- Improved status semantics to better reflect real runtime state.
+- Added production operation scripts for frontend service lifecycle.
+- Removed stale fetch behavior by switching monitor fetch to `no-store`.
+- Separated external agency-agent assets from this repository.
 
-## 2) Status semantics and realism improvements
+## Implemented Changes
 
-- Updated backend status inference to better represent real agent states:
-  - support normal `idle` state for no-task/no-session-key conditions,
-  - keep `blocked` as error,
-  - keep `stalled` as warning,
-  - treat `waiting` as normal state instead of warning.
-- Added frontend status semantics legend so users understand stage meaning.
+### 1) Dashboard Layout
+- Moved **Core Display Area** above secondary sections.
+- Refactored **Important Modules** into responsive multi-column cards.
+- Preserved heavy visualization modules as on-demand rendering.
 
-## 3) Data freshness and UX reliability
+### 2) Status Mapping
+- Added explicit idle detection (`no task + no session key`).
+- Adjusted status classification:
+  - `blocked` -> `error`
+  - `stalled` -> `warn`
+  - `waiting` -> `ok`
+  - `idle` -> `ok`
 
-- Removed revalidation cache on frontend monitor data fetch:
-  - `cache: "no-store"` for `/api/monitor-status` route fetch,
-  - `cache: "no-store"` for homepage monitor fetch.
-- This reduces stale state mismatch between backend and UI.
+### 3) Data Freshness
+- Updated frontend fetch strategy to `cache: "no-store"` in:
+  - `src/app/page.tsx`
+  - `src/app/api/monitor-status/route.ts`
 
-## 4) Deployment and runtime operations
+### 4) Operations
+- Added frontend production scripts:
+  - `prod:start`
+  - `prod:stop`
+  - `prod:restart`
+  - `prod:status`
+  - `prod:logs`
+  - `prod:deploy`
 
-- Added production scripts:
-  - `prod:start`, `prod:stop`, `prod:restart`, `prod:status`, `prod:logs`, `prod:deploy`.
-- Updated frontend README with production background-run instructions.
+### 5) Naming
+- Unified product naming to: **OpenClaw Agent Control**.
 
-## 5) Runtime verification
+## Validation
+- Frontend build and lint passed.
+- Backend syntax check passed.
+- Frontend service reachable on `:3000`.
+- Backend API reachable on `:8787`.
 
-- Frontend running on `:3000`.
-- Backend running on `:8787`.
-- Verified APIs and page availability after rebuild/restart.
-
-## 6) Notes
-
-- `agency` integration artifacts were moved out of project directory as requested to avoid packaging into monitor project.
+## Repository Hygiene
+- Added repository-level `.gitignore` protections for runtime/build artifacts.
+- Kept agency-agents integration materials outside this repository.
