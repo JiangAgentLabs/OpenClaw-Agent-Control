@@ -11,11 +11,19 @@ OpenClaw Agent status monitoring and control console for operations teams.
 - Start Here: [3-Minute Quick Start](#3-minute-quick-start)
 - Chinese Docs: [README.zh-CN.md](./README.zh-CN.md)
 - English Docs: [README.en.md](./README.en.md)
+- About: [docs/ABOUT.md](./docs/ABOUT.md)
 - Skill Deploy: [scripts/deploy_with_skill.sh](./scripts/deploy_with_skill.sh)
 - Full Docs Index: [docs/INDEX.md](./docs/INDEX.md)
 
 ## Project Definition
 OpenClaw Agent Control is an operational console that combines agent observability and control decisions in one workflow.
+
+## Project Advantages
+- Operator-first information architecture: core display appears before secondary diagnostics.
+- Practical status semantics: `idle`, `executing`, `waiting`, `stalled`, `blocked`.
+- Skill-first deployment: one command to deploy backend + frontend.
+- Low operational friction: script-based lifecycle management for production.
+- Bilingual onboarding: Chinese and English guides for different teams.
 
 ## Core Features
 - Agent / Sub-agent real-time status visibility.

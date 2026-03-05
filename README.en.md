@@ -5,6 +5,13 @@ OpenClaw Agent status monitoring and control console for multi-agent operations.
 ## Project Definition
 This project centralizes agent runtime observability and operational control decisions into one console.
 
+## Project Advantages
+- Operator-first information architecture with priority-focused layout.
+- Clear runtime semantics: `idle`, `executing`, `waiting`, `stalled`, `blocked`.
+- Skill-first deployment for one-command startup.
+- Low-friction operations with production lifecycle scripts.
+- Bilingual onboarding support for multi-language teams.
+
 ## Core Features
 - Real-time Agent/Sub-agent status monitoring.
 - Risk-first operational view (stalled, abnormal, active).
@@ -43,6 +50,7 @@ npm run prod:start
 
 ## Documentation
 - Chinese Guide: [README.zh-CN.md](./README.zh-CN.md)
+- About: [docs/ABOUT.md](./docs/ABOUT.md)
 - Tutorial (EN): [docs/TUTORIAL.en.md](./docs/TUTORIAL.en.md)
 - API Reference: [docs/API.md](./docs/API.md)
 - Open-source Landscape: [docs/OPEN_SOURCE_LANDSCAPE.md](./docs/OPEN_SOURCE_LANDSCAPE.md)

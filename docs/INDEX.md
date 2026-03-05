@@ -9,6 +9,7 @@
 - English Tutorial: [./TUTORIAL.en.md](./TUTORIAL.en.md)
 
 ## References
+- About: [./ABOUT.md](./ABOUT.md)
 - API Reference: [./API.md](./API.md)
 - Open-source Landscape: [./OPEN_SOURCE_LANDSCAPE.md](./OPEN_SOURCE_LANDSCAPE.md)
 
