@@ -1,66 +1,31 @@
-## OpenClaw Agent Control UI
+# OpenClaw Agent Control UI
 
-OpenClaw Agent Control 的前端 UI（Next.js 16）。
+Frontend console for OpenClaw Agent Control (Next.js 16).
 
-## Getting Started
-
-Run development server:
-
+## Development
 ```bash
+npm install
 npm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-## Production (Silent Background Run)
-
-This project includes built-in silent start/stop scripts.
-
-1. Build:
-
+## Production
 ```bash
 npm run prod:build
-```
-
-2. Start in background on `0.0.0.0:3000`:
-
-```bash
 npm run prod:start
 ```
 
-3. Check status:
-
+## Operations
 ```bash
 npm run prod:status
-```
-
-4. Restart after update:
-
-```bash
-npm run prod:restart
-```
-
-5. Stop:
-
-```bash
-npm run prod:stop
-```
-
-6. View logs:
-
-```bash
 npm run prod:logs
-```
-
-One-step deploy (build + restart):
-
-```bash
+npm run prod:restart
+npm run prod:stop
 npm run prod:deploy
 ```
 
-## Environment Variables
-
-- `PORT` default `3000`
-- `HOST` default `0.0.0.0`
-- `LINES` for `prod:logs` default `120`
-- `FOLLOW` for `prod:logs` default `1` (`0` for non-follow mode)
+## Environment
+- `HOST` default: `0.0.0.0`
+- `PORT` default: `3000`
+- `MONITOR_API_BASE` default: `http://127.0.0.1:8787`
+- `MONITOR_FORCE_REFRESH` default: `0`
+- `MONITOR_DEMO_DELAY_MS` default: `0`

@@ -1,58 +1,37 @@
 # OpenClaw Agent Control (English)
 
-A status monitoring and control console for OpenClaw agents.
+OpenClaw Agent status monitoring and control console for multi-agent operations.
 
-## Features
-- Agent / Sub-agent execution monitoring
-- Risk-first operational view (stalled, abnormal, active)
-- Event timeline for status transitions
-- Split architecture: FastAPI backend + Next.js frontend
-- Production scripts for silent start/stop/restart/status/logs
+## Use Cases
+- Detect stalled, blocked, idle, and running agents quickly.
+- Combine observability and control decisions in one place.
+- Operate backend/frontend independently with production scripts.
 
-## Run
+## Core Capabilities
+- Agent and sub-agent execution monitoring.
+- Risk-first operational dashboard.
+- Timeline-based status transition analysis.
+- Silent production lifecycle scripts.
 
-### 1) Backend
+## Quick Start
+1. Start backend:
 ```bash
 cd /root/openclaw-monitor-mvp
 uv run --with fastapi --with uvicorn python -m uvicorn app:app --host 0.0.0.0 --port 8787
 ```
-
-### 2) Frontend
+2. Start frontend:
 ```bash
 cd /root/openclaw-monitor-mvp/agent-monitor-ui
 npm run prod:build
 npm run prod:start
 ```
-
-### 3) Endpoints
-- Frontend console: `http://127.0.0.1:3000`
-- Backend API: `http://127.0.0.1:8787/api/status`
+3. Access:
+- Console: `http://127.0.0.1:3000`
+- Status API: `http://127.0.0.1:8787/api/status`
 - Backend dashboard: `http://127.0.0.1:8787/dashboard`
 
-## Frontend Ops Commands
-Run inside `agent-monitor-ui`:
-
-```bash
-npm run prod:build
-npm run prod:start
-npm run prod:stop
-npm run prod:restart
-npm run prod:status
-npm run prod:logs
-npm run prod:deploy
-```
-
-## Configuration
-- `OPENCLAW_HOME` default: `/root/.openclaw`
-- `CACHE_TTL_SECONDS` default: `15`
-- `DASHBOARD_REFRESH_SECONDS` default: `5`
-- `TASK_STALL_SECONDS` default: `60`
-- `OFFICIAL_STATUS_ENABLED` default: `1`
-- `OFFICIAL_STATUS_TIMEOUT_SECONDS` default: `8`
-
-## Status Semantics
-- `idle`: no task, normal
-- `executing`: actively running
-- `waiting`: queued, normal
-- `stalled`: timed out, warning
-- `blocked`: aborted/failed, error
+## Documentation
+- Tutorial (EN): [docs/TUTORIAL.en.md](./docs/TUTORIAL.en.md)
+- API Reference: [docs/API.md](./docs/API.md)
+- Open-source Landscape: [docs/OPEN_SOURCE_LANDSCAPE.md](./docs/OPEN_SOURCE_LANDSCAPE.md)
+- Contributing: [CONTRIBUTING.md](./CONTRIBUTING.md)
