@@ -1,5 +1,7 @@
 # OpenClaw Agent Control（中文）
 
+[ClawHub 安装链接](https://clawhub.ai/JiangAgentLabs/openclaw-agent-control)
+
 OpenClaw Agent 状态监控与控制台，面向多 Agent 运行场景。
 
 ## 项目定义

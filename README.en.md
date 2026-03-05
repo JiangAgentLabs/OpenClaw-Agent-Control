@@ -1,5 +1,7 @@
 # OpenClaw Agent Control (English)
 
+[Install on ClawHub](https://clawhub.ai/JiangAgentLabs/openclaw-agent-control)
+
 OpenClaw Agent status monitoring and control console for multi-agent operations.
 
 ## Project Definition

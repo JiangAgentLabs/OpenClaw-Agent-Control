@@ -2,6 +2,8 @@
 
 [English](./README.en.md) | 中文（当前）
 
+[ClawHub 安装链接](https://clawhub.ai/JiangAgentLabs/openclaw-agent-control)
+
 OpenClaw Agent 状态监控与控制台，面向多 Agent 运维场景。
 
 ![Python](https://img.shields.io/badge/Python-3.10%2B-blue)
