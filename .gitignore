@@ -1,0 +1,15 @@
+# Python
+__pycache__/
+*.pyc
+
+# Frontend build/runtime
+agent-monitor-ui/node_modules/
+agent-monitor-ui/node_modules.bak.*/
+agent-monitor-ui/.next/
+agent-monitor-ui/.run/
+agent-monitor-ui/tsconfig.tsbuildinfo
+agent-monitor-ui/package-lock.bak.*
+
+# Logs/temp
+*.log
+.DS_Store
