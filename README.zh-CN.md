@@ -22,6 +22,13 @@ OpenClaw Agent 状态监控与控制台，面向多 Agent 运行场景。
 ## 一键部署（Skill 集成）
 后续可直接通过包装好的 skill 完成部署与启动。
 
+先安装 skill（npm 命令）：
+```bash
+cd /root/openclaw-monitor-mvp/agent-monitor-ui
+npm run skill:install
+```
+
+再部署启动：
 ```bash
 cd /root/openclaw-monitor-mvp
 bash ./scripts/deploy_with_skill.sh

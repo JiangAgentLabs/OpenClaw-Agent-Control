@@ -13,7 +13,9 @@
     "prod:restart": "bash scripts/prod_restart.sh",
     "prod:status": "bash scripts/prod_status.sh",
     "prod:logs": "bash scripts/prod_logs.sh",
-    "prod:deploy": "npm run prod:build && npm run prod:restart"
+    "prod:deploy": "npm run prod:build && npm run prod:restart",
+    "skill:install": "bash ../scripts/install_skill.sh",
+    "skill:deploy": "bash ../scripts/deploy_with_skill.sh"
   },
   "dependencies": {
     "@tanstack/react-table": "^8.21.3",

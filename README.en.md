@@ -22,6 +22,13 @@ This project centralizes agent runtime observability and operational control dec
 ## One-command Deployment (Skill-integrated)
 This repository is designed to work with packaged OpenClaw skills.
 
+Install skill package via npm command:
+```bash
+cd /root/openclaw-monitor-mvp/agent-monitor-ui
+npm run skill:install
+```
+
+Then deploy:
 ```bash
 cd /root/openclaw-monitor-mvp
 bash ./scripts/deploy_with_skill.sh

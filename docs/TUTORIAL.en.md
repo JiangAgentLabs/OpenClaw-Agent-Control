@@ -47,6 +47,13 @@ npm run prod:stop
 4. Validate with `/api/status`.
 
 ## 8. Skill Deployment Entry (Recommended)
+Install skill package via npm command first:
+```bash
+cd /root/openclaw-monitor-mvp/agent-monitor-ui
+npm run skill:install
+```
+
+Then deploy:
 ```bash
 cd /root/openclaw-monitor-mvp
 bash ./scripts/deploy_with_skill.sh

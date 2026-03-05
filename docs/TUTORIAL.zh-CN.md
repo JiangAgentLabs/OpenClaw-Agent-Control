@@ -47,6 +47,13 @@ npm run prod:stop
 4. 用 `/api/status` 验证变更是否生效。
 
 ## 8. Skill 部署入口（推荐）
+先安装 skill（npm 命令）：
+```bash
+cd /root/openclaw-monitor-mvp/agent-monitor-ui
+npm run skill:install
+```
+
+再执行部署：
 ```bash
 cd /root/openclaw-monitor-mvp
 bash ./scripts/deploy_with_skill.sh
