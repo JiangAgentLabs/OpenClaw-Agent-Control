@@ -45,3 +45,15 @@ npm run prod:stop
 2. Run `npm run prod:build`.
 3. Run `npm run prod:restart`.
 4. Validate with `/api/status`.
+
+## 8. Skill Deployment Entry (Recommended)
+```bash
+cd /root/openclaw-monitor-mvp
+bash ./scripts/deploy_with_skill.sh
+```
+
+You can override skill path via env:
+```bash
+OPENCLAW_MONITOR_SKILL_DIR=/root/.openclaw/skills/openclaw-monitor \
+  bash ./scripts/deploy_with_skill.sh
+```

@@ -2,18 +2,29 @@
 
 OpenClaw Agent 状态监控与控制台，面向多 Agent 运行场景。
 
-## 适用场景
-- 需要快速判断 Agent 是否卡住、阻塞、空闲或执行中。
-- 需要把状态监控与操作决策放在同一界面。
-- 需要前后端可独立部署、可运维脚本化的方案。
+## 项目定义
+本项目用于把 Agent 运行状态监控与控制决策集中到一个运维控制台中。
 
-## 核心能力
-- Agent / Sub-agent 执行状态监控。
-- 风险优先视图（告警、异常、活跃）。
-- 事件时间轴与状态演化追踪。
-- 生产脚本支持静默启动与生命周期管理。
+## 核心功能
+- Agent / Sub-agent 实时状态监控。
+- 风险优先视图（卡住、异常、活跃）。
+- 事件时间轴与状态演化分析。
+- 前后端生产运维脚本（启动/停止/重启/状态/日志）。
+- 与 OpenClaw Skills 集成的一键部署入口。
 
-## 快速运行
+## 一键部署（Skill 集成）
+后续可直接通过包装好的 skill 完成部署与启动。
+
+```bash
+cd /root/openclaw-monitor-mvp
+bash ./scripts/deploy_with_skill.sh
+```
+
+说明：
+- 若存在 skill 运行器（`/root/.openclaw/skills/openclaw-monitor/scripts/run_monitor.sh`），后端将优先通过 skill 拉起。
+- 前端会自动执行生产构建并重启。
+
+## 快速运行（手动）
 1. 启动后端：
 ```bash
 cd /root/openclaw-monitor-mvp
@@ -31,6 +42,7 @@ npm run prod:start
 - 后端看板：`http://127.0.0.1:8787/dashboard`
 
 ## 文档导航
+- 英文文档：[README.en.md](./README.en.md)
 - 教程（中文）：[docs/TUTORIAL.zh-CN.md](./docs/TUTORIAL.zh-CN.md)
 - API 文档：[docs/API.md](./docs/API.md)
 - 开源项目对标：[docs/OPEN_SOURCE_LANDSCAPE.md](./docs/OPEN_SOURCE_LANDSCAPE.md)

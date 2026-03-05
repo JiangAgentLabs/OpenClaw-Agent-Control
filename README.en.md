@@ -2,18 +2,29 @@
 
 OpenClaw Agent status monitoring and control console for multi-agent operations.
 
-## Use Cases
-- Detect stalled, blocked, idle, and running agents quickly.
-- Combine observability and control decisions in one place.
-- Operate backend/frontend independently with production scripts.
+## Project Definition
+This project centralizes agent runtime observability and operational control decisions into one console.
 
-## Core Capabilities
-- Agent and sub-agent execution monitoring.
-- Risk-first operational dashboard.
-- Timeline-based status transition analysis.
-- Silent production lifecycle scripts.
+## Core Features
+- Real-time Agent/Sub-agent status monitoring.
+- Risk-first operational view (stalled, abnormal, active).
+- Timeline diagnostics for status transitions.
+- Production lifecycle scripts (start/stop/restart/status/logs).
+- Skill-integrated one-command deployment entry.
 
-## Quick Start
+## One-command Deployment (Skill-integrated)
+This repository is designed to work with packaged OpenClaw skills.
+
+```bash
+cd /root/openclaw-monitor-mvp
+bash ./scripts/deploy_with_skill.sh
+```
+
+Behavior:
+- If the skill runner exists (`/root/.openclaw/skills/openclaw-monitor/scripts/run_monitor.sh`), backend starts via skill.
+- Frontend is built and restarted in production mode automatically.
+
+## Quick Start (Manual)
 1. Start backend:
 ```bash
 cd /root/openclaw-monitor-mvp
@@ -31,6 +42,7 @@ npm run prod:start
 - Backend dashboard: `http://127.0.0.1:8787/dashboard`
 
 ## Documentation
+- Chinese Guide: [README.zh-CN.md](./README.zh-CN.md)
 - Tutorial (EN): [docs/TUTORIAL.en.md](./docs/TUTORIAL.en.md)
 - API Reference: [docs/API.md](./docs/API.md)
 - Open-source Landscape: [docs/OPEN_SOURCE_LANDSCAPE.md](./docs/OPEN_SOURCE_LANDSCAPE.md)

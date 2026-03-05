@@ -45,3 +45,15 @@ npm run prod:stop
 2. 执行 `npm run prod:build`。
 3. 执行 `npm run prod:restart`。
 4. 用 `/api/status` 验证变更是否生效。
+
+## 8. Skill 部署入口（推荐）
+```bash
+cd /root/openclaw-monitor-mvp
+bash ./scripts/deploy_with_skill.sh
+```
+
+可通过环境变量指定 skill 路径：
+```bash
+OPENCLAW_MONITOR_SKILL_DIR=/root/.openclaw/skills/openclaw-monitor \
+  bash ./scripts/deploy_with_skill.sh
+```
